@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Damn Fine Booking</title>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flexRow space-between align-center">
+        <h1 class="large martelFont cream mt20 ml20">Book Us</h1>
+        <a class="textNone" href="index.html">
+            <div class="home-button mr20">
+                <h5 class="fw300 m0">Home</h5>
+            </div>
+        </a>
+    </div>
+    <div class="form-wrapper mw600">
+        <form>
+            <div class="form-group mb20">
+                <label for="exampleFormControlInput1" class="cream">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+              </div>
+            <div class="form-group mb20">
+              <label for="exampleFormControlInput1" class="cream">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group mb20">
+                <label for="exampleFormControlInput1" class="cream">Phone Number</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(xxx) xxx-xxxx">
+              </div>
+            <div class="form-group mb20">
+              <label for="exampleFormControlSelect1" class="cream">Package Option</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>The Essentials</option>
+                <option>The DJ Rig</option>
+                <option>The DJ Rig Plus</option>
+                <option>The Small Stage</option>
+                <option>The Standard Stage</option>
+              </select>
+            </div>
+            <div class="form-group mb20">
+                <label for="exampleFormControlInput1" class="cream">Date of Booking</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mm/dd/yyyy">
+              </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1" class="cream">Any other notes or questions?</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+          <div class="button">
+            <p class="cream mt20 mb0" id="thanks"></p>
+            <button onclick="thanks()" type="button" id="submit" class="submit-button mt20 gold">Submit</button>
+          </div>
+    </div>
+</body>
